@@ -1,0 +1,9 @@
+Manufacturer=Mill-Max
+PartNumber=8086-0-00-15-00-00-33-0
+PartCategory=Connector
+PackageCategory=Other
+PinCount=1
+Version=1.4
+Released=2021-02-18 16:12:19
+Downloaded=2021-11-22 13:33:48
+3D=Y

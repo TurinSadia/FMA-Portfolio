@@ -1,0 +1,152 @@
+.App {
+    background-color: #fff;
+    padding-bottom: 40px;
+}
+
+ol li {
+    padding: 8px;
+    text-align: justify;
+
+}
+
+ol li a {
+    text-decoration: none;
+}
+
+.tab-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    background: #f1f1f1;
+    margin: 0 auto 0;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.bloc-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tabs {
+    font-size: 13px;
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+    background: rgba(128, 128, 128, 0.075);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+
+}
+
+.tabs:not(:last-child) {
+    border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tabs {
+    background: white;
+    border-bottom: 1px solid transparent;
+}
+
+.active-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+    background: #D3413F;
+}
+
+
+
+.tab-container button {
+    border: none;
+    margin: 0;
+
+}
+
+.content-tabs {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.content-tabs li {
+    font-size: 15px;
+}
+
+.content {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.content h2 {
+    padding: 0px 0 5px 0px;
+}
+
+.content hr {
+    width: 100px;
+    height: 2px;
+    background: #222;
+    margin-bottom: 5px;
+}
+
+.content p {
+    width: 100%;
+    height: 100%;
+}
+
+.active-content {
+    display: block;
+}
+
+
+
+/* ---------------------------Media Query--------------------------------------------------- */
+
+
+@media screen and (max-width:532px) {
+    .content-tabs li {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .tabs {
+        font-size: 9px;
+    }
+
+    .content-tabs li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .tabs {
+        font-size: 7px;
+    }
+
+    .content-tabs li {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:328px) {}

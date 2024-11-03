@@ -1,0 +1,104 @@
+.heroImagePUBLICATION {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    position: relative;
+
+}
+
+.heroImagePUBLICATION::before {
+    content: "";
+    background: url("https://fse.ewubd.edu/storage/app/uploads/public/5db/a8a/59b/5dba8a59bafcf793325987.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.heading {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.heroImagePUBLICATION .heading h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+
+.heroImagePUBLICATION hr {
+    width: 60%;
+    height: 10px;
+    background-color: #ff4a57;
+    border: none;
+}
+
+
+
+
+/* ---------------------------Media Query--------------------------------------------------- */
+
+
+@media screen and (max-width:640px) {
+    .heroImagePUBLICATION .heading h1 {
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .heroImagePUBLICATION hr {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:532px) {
+    .heroImagePUBLICATION .heading h1 {
+        font-size: 2rem;
+    }
+
+    .heroImagePUBLICATION hr {
+        height: 7px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .heroImagePUBLICATION .heading h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+
+    .heroImagePUBLICATION .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .heroImagePUBLICATION hr {
+        height: 5px;
+    }
+}
+
+@media screen and (max-width:328px) {
+    .heroImagePUBLICATION .heading h1 {
+        font-size: 1.2rem;
+    }
+}

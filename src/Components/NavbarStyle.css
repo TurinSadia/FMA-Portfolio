@@ -1,0 +1,158 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 10;
+}
+
+.header-bg {
+    background-color: rgba(0, 0, 0, 0.85);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.logo-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto 0;
+
+
+}
+
+
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo-heading h1 {
+    font-size: 1rem;
+    padding-left: 1rem;
+    color: #fff;
+}
+
+
+.nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.nav-menu li {
+    padding: 0 0.9rem;
+    list-style: none;
+    color: #fff;
+
+
+}
+
+.nav-menu li a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+
+.bg-blue-100 {
+    background: #D3413F;
+    padding: 0.3rem;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+
+
+
+
+/* ---------------------------Media Query--------------------------------------------------- */
+
+
+
+@media screen and (max-width: 1040px) {
+
+    .nav-menu {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: -3;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        padding: 0.7rem 0;
+    }
+
+    .nav-menu li a {
+        font-size: 1rem;
+    }
+
+    .hamburger-menu {
+        display: initial;
+    }
+
+}
+
+
+@media screen and (max-width:480px) {
+
+    .profile-img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+@media screen and (max-width:350px) {
+
+    .logo-heading h1 {
+        font-size: 0.8rem;
+    }
+
+}

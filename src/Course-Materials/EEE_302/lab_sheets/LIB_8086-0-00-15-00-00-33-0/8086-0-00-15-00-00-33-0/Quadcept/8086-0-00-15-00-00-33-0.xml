@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/1168403/647435/2.49/1/0/Connector/-->
+<quadcept_library>
+  <setting unit="mil" />
+  <textstyle name="Default" height="47.244094488189" strokewidth="7.8740157480315" charwidth="47.244094488189" />
+  <textstyle name="Dimension" height="19.6850393700787" strokewidth="0" charwidth="19.6850393700787" />
+  <textstyle name="H127W0635TH00762" height="50" strokewidth="3" charwidth="25" />
+  <textstyle name="H15W15TH02" height="59.0551181102362" strokewidth="7.8740157480315" charwidth="59.0551181102362" />
+  <padstyle name="c315.7_h210.5" surface="False" plated="True" isvia="False" nopaste="True" nomask="True" complex="False" holesize="82.87401574803">
+    <padshape layer="TOP" shape="round" width="124.29133858268" height="124.29133858268" />
+    <padshape layer="TOP_SOLDER_MASK" shape="round" width="132.16535433071" height="132.16535433071" />
+    <padshape layer="INNER" shape="round" width="124.29133858268" height="124.29133858268" />
+    <padshape layer="BOTTOM" shape="round" width="124.29133858268" height="124.29133858268" />
+    <padshape layer="BOTTOM_SOLDER_MASK" shape="round" width="132.16535433071" height="132.16535433071" />
+  </padstyle>
+  <footprint name="8086000150000330" originx="0" originy="0" pickpointx="0" pickpointy="0">
+    <pcbpin number="1" name="1" style="c315.7_h210.5" originx="0" originy="0" rotation="90" />
+    <line layer="TOP_PLACE_BOUND" originx="-132.87401574803" originy="132.87401574803" endx="132.87401574803" endy="132.87401574803" width="3.9370078740157" />
+    <line layer="TOP_PLACE_BOUND" originx="132.87401574803" originy="132.87401574803" endx="132.87401574803" endy="-132.87401574803" width="3.9370078740157" />
+    <line layer="TOP_PLACE_BOUND" originx="132.87401574803" originy="-132.87401574803" endx="-132.87401574803" endy="-132.87401574803" width="3.9370078740157" />
+    <line layer="TOP_PLACE_BOUND" originx="-132.87401574803" originy="-132.87401574803" endx="-132.87401574803" endy="132.87401574803" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="0" originy="93.503937007873" endx="0" endy="93.503937007873" width="3.9370078740157" />
+    <arc layer="TOP_ASSEMBLY" originx="0" originy="0" startangle="90.0" sweepangle="180.0" radius="93.503937007873" width="3.9370078740157" />
+    <line layer="TOP_ASSEMBLY" originx="0" originy="-93.503937007873" endx="0" endy="-93.503937007873" width="3.9370078740157" />
+    <arc layer="TOP_ASSEMBLY" originx="0" originy="0" startangle="-90.0" sweepangle="180.0" radius="93.503937007873" width="3.9370078740157" />
+    <line layer="TOP_SILKSCREEN" originx="0" originy="93.503937007873" endx="0" endy="93.503937007873" width="7.8740157480314" />
+    <arc layer="TOP_SILKSCREEN" originx="0" originy="0" startangle="90.0" sweepangle="180.0" radius="93.503937007873" width="7.8740157480314" />
+    <line layer="TOP_SILKSCREEN" originx="0" originy="-93.503937007873" endx="0" endy="-93.503937007873" width="7.8740157480314" />
+    <arc layer="TOP_SILKSCREEN" originx="0" originy="0" startangle="-90.0" sweepangle="180.0" radius="93.503937007873" width="7.8740157480314" />
+  </footprint>
+  <symbol name="8086-0-00-15-00-00-33-0" originx="0" originy="0">
+    <line originx="200" originy="100" endx="600" endy="100" width="0" />
+    <line originx="600" originy="-100" endx="600" endy="100" width="0" />
+    <line originx="600" originy="-100" endx="200" endy="-100" width="0" />
+    <line originx="200" originy="100" endx="200" endy="-100" width="0" />
+    <sympin number="1" originx="200" originy="0" rotation="180" length="100" width="7.8740157480315" flipped="False">
+      <text name="pinname" originx="230" originy="0" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="1" />
+      <text name="pindes" originx="140" originy="20" style="Default" rotation="0" justify="lowerright" flipped="False" hidden="False" data="1" />
+    </sympin>
+  </symbol>
+  <component name="8086-0-00-15-00-00-33-0" designatorprefix="J" height="25" footprint="8086000150000330">
+    <comppin designator="1" sympin="1" pinswap="0" gateswap="0" gate="1" group="1" side="" type="Any" name="1" />
+    <attached_symbol gate="1" name="8086-0-00-15-00-00-33-0" />
+    <pinmap designator="1" footprintpin="1" />
+    <text name="Datasheet" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="https://www.arrow.com/en/products/8086-0-00-15-00-00-33-0/mill-max" />
+    <text name="Description" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="Circuit Board Hardware - PCB STANDARD I.C. PIN" />
+    <text name="Manufacturer_Name" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="Mill-Max" />
+    <text name="Manufacturer_Part_Number" originx="650" originy="200" style="Default" rotation="0" justify="left" flipped="False" hidden="False" data="8086-0-00-15-00-00-33-0" />
+    <text name="Mouser Part Number" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="575-8086000150000330" />
+    <text name="Mouser Price/Stock" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="https://www.mouser.co.uk/ProductDetail/Mill-Max/8086-0-00-15-00-00-33-0?qs=xZ%2FP%252Ba9zWqYK9lliPcS7lQ%3D%3D" />
+    <text name="Arrow Part Number" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="8086-0-00-15-00-00-33-0" />
+    <text name="Arrow Price/Stock" originx="0" originy="0" style="Default" rotation="0" justify="" flipped="False" hidden="True" data="https://www.arrow.com/en/products/8086-0-00-15-00-00-33-0/mill-max" />
+  </component>
+</quadcept_library>

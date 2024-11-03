@@ -1,0 +1,64 @@
+(Japanese_coding: sjis)
+(function "ECS_1168403"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2021-02-18-16:12:19)
+    (utime 2021-02-19-06:25:47)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+    )
+    (property "symbolName" "8086-0-00-15-00-00-33-0")
+)
+
+
+(pinAssign "ECS_1168403"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2021-02-18-16:12:19)
+    (utime 2021-02-19-06:25:47)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_1168403")
+                (port "1" (match "1"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "8086-0-00-15-00-00-33-0")
+)
+
+
+(part "8086-0-00-15-00-00-33-0"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2021-02-18-16:12:19)
+    (utime 2021-02-19-06:25:47)
+    (packageRef "8086-0-00-15-00-00-33-0")
+    (pinAssignRef "ECS_1168403")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "J")
+    (property "description" "Circuit Board Hardware - PCB STANDARD I.C. PIN")
+    (property "Manufacturer_Name" "Mill-Max")
+    (property "Manufacturer_Part_Number" "8086-0-00-15-00-00-33-0")
+    (property "Mouser_Part_Number" "575-8086000150000330")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Mill-Max/8086-0-00-15-00-00-33-0?qs=xZ%2FP%252Ba9zWqYK9lliPcS7lQ%3D%3D")
+    (property "Arrow_Part_Number" "8086-0-00-15-00-00-33-0")
+    (property "Arrow_Price/Stock" "https://www.arrow.com/en/products/8086-0-00-15-00-00-33-0/mill-max")
+    (property "Datasheet_Link" "https://www.arrow.com/en/products/8086-0-00-15-00-00-33-0/mill-max")
+    (property "compAreaTopHeight" 0.635)
+)
+
+

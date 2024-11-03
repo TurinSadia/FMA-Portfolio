@@ -1,0 +1,126 @@
+.heroImageCONTACT {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    position: relative;
+
+}
+
+.heroImageCONTACT::before {
+    content: "";
+    background: url("https://images.unsplash.com/photo-1563906267088-b029e7101114?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvbnRhY3R8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.heading {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.heroImageCONTACT .heading h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+
+.heroImageCONTACT hr {
+    width: 60%;
+    height: 10px;
+    background-color: #ff4a57;
+    border: none;
+}
+
+
+/* ---------------------------Media Query--------------------------------------------------- */
+
+
+@media screen and (max-width:992px) {
+
+    .heroImageCONTACT .heading h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    .heroImageCONTACT .heading h1 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .heroImageCONTACT hr {
+        width: 70%;
+    }
+}
+
+
+
+@media screen and (max-width:532px) {
+
+    .heroImageCONTACT .heading h1 {
+        font-size: 2rem;
+    }
+
+    .heroImageCONTACT hr {
+        height: 7px;
+    }
+
+    .heroImageCONTACT::before {
+        background-size: 818px 864px;
+    }
+
+
+}
+
+@media screen and (max-width:480px) {
+    .heroImageCONTACT .heading h1 {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media screen and (max-width:350px) {
+
+    .heroImageCONTACT .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .heroImageCONTACT hr {
+        height: 5px;
+    }
+
+
+    .heroImageCONTACT::before {
+        background-size:663px 799px;
+    }
+}
+
+@media screen and (max-width:328px) {
+    .heroImageCONTACT .heading h1 {
+        font-size: 1.2rem;
+    }
+}

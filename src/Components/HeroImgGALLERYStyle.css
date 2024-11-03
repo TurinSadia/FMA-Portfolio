@@ -1,0 +1,134 @@
+.heroImageGALLERY {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    position: relative;
+
+}
+
+.heroImageGALLERY::before {
+    content: "";
+    background: url("https://fse.ewubd.edu/storage/app/uploads/public/5e7/0f2/bc8/5e70f2bc8c042732014403.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.heading {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.heroImageGALLERY .heading h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+
+.heroImageGALLERY hr {
+    width: 60%;
+    height: 10px;
+    background-color: #ff4a57;
+    border: none;
+}
+
+/* ---------------------------Media Query--------------------------------------------------- */
+
+
+@media screen and (max-width:992px) {
+
+    .heroImageGALLERY .heading h1 {
+        font-size: 3rem;
+    }
+}
+
+
+
+@media screen and (max-width:640px) {
+
+    .heroImageGALLERY .heading h1 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .heroImageGALLERY hr {
+        width: 70%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:532px) {
+
+    .heroImageGALLERY .heading h1 {
+        font-size: 2rem;
+    }
+
+    .heroImageGALLERY hr {
+        height: 7px;
+    }
+
+    .heroImageGALLERY::before {
+        background-color: rgba(0, 0, 0, 0.9);
+    background-size: 536px 536px;
+        }
+
+}
+
+@media screen and (max-width:480px) {
+    .heroImageGALLERY .heading h1 {
+        font-size: 1.8rem;
+    }
+    .heroImageGALLERY::before {
+        background-color: rgba(0, 0, 0, 0.9);
+        background-size: 422px 380px;
+        }
+
+}
+
+
+@media screen and (max-width:350px) {
+
+    .heroImageGALLERY .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .heroImageGALLERY hr {
+        height: 5px;
+    }
+    .heroImageGALLERY::before {
+       background-color: rgba(0, 0, 0, 0.5);
+        background-size: 382px 382px;
+       }
+
+}
+
+@media screen and (max-width:328px) {
+    .heroImageGALLERY .heading h1 {
+        font-size: 1.2rem;
+    }
+}
